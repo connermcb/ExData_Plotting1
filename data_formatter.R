@@ -10,6 +10,8 @@ con <- unz(temp, "household_power_consumption.txt")
 data <- read.csv(con, sep=";")
 unlink(temp)
 
+closeAllConnections()
+
 ## format data and subset data
 # date to character class
 data[,"Date"] <- as.character(data$Date)

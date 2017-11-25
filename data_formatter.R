@@ -28,4 +28,8 @@ data["date_time"] <- paste(as.character(data$Date), as.character(data$Time))
 # change class of date_time to POSIXt
 data[["date_time"]] <- strptime(data$date_time, format = "%d/%m/%Y %H:%M:%S")
 
-
+## Calls to plotting functions
+source("plot1.R")
+source("plot2.R")
+source("plot3.R")
+source("plot4.R")
